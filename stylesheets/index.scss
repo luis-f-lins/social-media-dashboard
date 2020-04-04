@@ -89,61 +89,6 @@ html[data-theme="dark"] {
   }
 }
 
-// @media only screen and (min-width: 678px) and (max-width: 1000px) {
-//   .main-card {
-//     width: calc(30vw - 75px);
-//   }
-
-//   .overview-card {
-//     width: calc(30vw - 5px);
-//   }
-// }
-
-// @media only screen and (min-width: 1001px) and (max-width: 1139px) {
-//   body {
-//     margin-right: 8%;
-//     margin-left: 8%;
-//   }
-
-//   .main-card {
-//     width: 300px;
-//   }
-
-//   .overview-card {
-//     width: 150px;
-//   }
-// }
-
-// @media only screen and (min-width: 1140px) {
-//   body {
-//     margin-right: 8%;
-//     margin-left: 8%;
-//   }
-
-//   .main-card {
-//     width: 100px;
-//   }
-
-//   .overview-card {
-//     width: 175px;
-//   }
-// }
-
-// @media only screen and (min-width: 1250px) {
-//   body {
-//     margin-right: 8%;
-//     margin-left: 8%;
-//   }
-
-//   .main-card {
-//     width: 120px;
-//   }
-
-//   .overview-card {
-//     width: 190px;
-//   }
-// }
-
 h1 {
   color: var(--title);
   font-family: $primary-font;
