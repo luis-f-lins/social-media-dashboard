@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./stylesheets/index.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="top-bar">
+      <div class="title">
+        <h1>Social Media Dashboard</h1>
+        <h3>Total Followers: 23,004</h3>
+      </div>
+      <div class="separator"></div>
+      <div class="dark-mode-toggle">
+        <span>Dark Mode</span>
+        <input
+          class="container_toggle"
+          type="checkbox"
+          id="switch"
+          name="mode"
+        />
+        <label for="switch">Toggle</label>
+      </div>
+    </div>
+    <div class="main-card-line">
+      <div class="main-card">
+        <div class="card-line facebook"></div>
+        <div class="account">
+          <img class="social-icon" src="./images/icon-facebook.svg" />
+          <div class="account-name">@nathanf</div>
+        </div>
+        <div class="main-number">1987</div>
+        <div class="description">Followers</div>
+        <div class="growth">
+          <img src="images/icon-up.svg" />
+          <div class="growth-text up">12 Today</div>
+        </div>
+      </div>
+      <div class="main-card">
+        <div class="card-line twitter"></div>
+        <div class="account">
+          <img class="social-icon" src="./images/icon-twitter.svg" />
+          <div class="account-name">@nathanf</div>
+        </div>
+        <div class="main-number">1044</div>
+        <div class="description">Followers</div>
+        <div class="growth">
+          <img src="images/icon-up.svg" />
+          <div class="growth-text up">99 Today</div>
+        </div>
+      </div>
+      <div class="main-card">
+        <div class="card-line instagram"></div>
+        <div class="account">
+          <img class="social-icon" src="./images/icon-instagram.svg" />
+          <div class="account-name">@realnathanf</div>
+        </div>
+        <div class="main-number">11k</div>
+        <div class="description">Followers</div>
+        <div class="growth">
+          <img src="images/icon-up.svg" />
+          <div class="growth-text up">1099 Today</div>
+        </div>
+      </div>
+      <div class="main-card">
+        <div class="card-line youtube"></div>
+        <div class="account">
+          <img class="social-icon" src="./images/icon-youtube.svg" />
+          <div class="account-name">Nathan F.</div>
+        </div>
+        <div class="main-number">8239</div>
+        <div class="description">Subscribers</div>
+        <div class="growth">
+          <img src="images/icon-down.svg" />
+          <div class="growth-text down">133 Today</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Overview - Today</h2>
+
+    <div class="overview-card-line">
+      <div class="overview-card">
+        <div class="top-info">
+          <div class="description">Page Views</div>
+          <img class="social-icon" src="./images/icon-facebook.svg" />
+        </div>
+        <div class="bottom-info">
+          <div class="main-number">87</div>
+          <div class="growth">
+            <img src="images/icon-up.svg" />
+            <div class="growth-text up">3%</div>
+          </div>
+        </div>
+      </div>
+      <div class="overview-card">
+        <div class="top-info">
+          <div class="description">Likes</div>
+          <img class="social-icon" src="./images/icon-facebook.svg" />
+        </div>
+        <div class="bottom-info">
+          <div class="main-number">52</div>
+          <div class="growth">
+            <img src="images/icon-down.svg" />
+            <div class="growth-text down">2%</div>
+          </div>
+        </div>
+      </div>
+      <div class="overview-card">
+        <div class="top-info">
+          <div class="description">Likes</div>
+          <img class="social-icon" src="./images/icon-instagram.svg" />
+        </div>
+        <div class="bottom-info">
+          <div class="main-number">5462</div>
+          <div class="growth">
+            <img src="images/icon-up.svg" />
+            <div class="growth-text up">2257%</div>
+          </div>
+        </div>
+      </div>
+      <div class="overview-card">
+        <div class="top-info">
+          <div class="description">Profile Views</div>
+          <img class="social-icon" src="./images/icon-instagram.svg" />
+        </div>
+        <div class="bottom-info">
+          <div class="main-number">52k</div>
+          <div class="growth">
+            <img src="images/icon-up.svg" />
+            <div class="growth-text up">1375%</div>
+          </div>
+        </div>
+      </div>
+      <div class="overview-card">
+        <div class="top-info">
+          <div class="description">Retweets</div>
+          <img class="social-icon" src="./images/icon-twitter.svg" />
+        </div>
+        <div class="bottom-info">
+          <div class="main-number">117</div>
+          <div class="growth">
+            <img src="images/icon-up.svg" />
+            <div class="growth-text up">303%</div>
+          </div>
+        </div>
+      </div>
+      <div class="overview-card">
+        <div class="top-info">
+          <div class="description">Likes</div>
+          <img class="social-icon" src="./images/icon-twitter.svg" />
+        </div>
+        <div class="bottom-info">
+          <div class="main-number">507</div>
+          <div class="growth">
+            <img src="images/icon-down.svg" />
+            <div class="growth-text up">553%</div>
+          </div>
+        </div>
+      </div>
+      <div class="overview-card">
+        <div class="top-info">
+          <div class="description">Likes</div>
+          <img class="social-icon" src="./images/icon-youtube.svg" />
+        </div>
+        <div class="bottom-info">
+          <div class="main-number">107</div>
+          <div class="growth">
+            <img src="images/icon-down.svg" />
+            <div class="growth-text down">19%</div>
+          </div>
+        </div>
+      </div>
+      <div class="overview-card">
+        <div class="top-info">
+          <div class="description">Total Views</div>
+          <img class="social-icon" src="./images/icon-youtube.svg" />
+        </div>
+        <div class="bottom-info">
+          <div class="main-number">1407</div>
+          <div class="growth">
+            <img src="images/icon-down.svg" />
+            <div class="growth-text down">12%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375%
+    Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407 12%
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Luis Fernando Lins</a>.
+    </div> -->
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,451 @@
+$primary-font: "Inter";
+
+$bright-red: hsl(356, 69%, 56%);
+$dark-greyish-blue: hsl(228, 12%, 44%);
+$facebook-blue: hsl(195, 100%, 50%);
+$twitter-blue: hsl(203, 89%, 53%);
+$instagram-gradient: linear-gradient(
+  to right,
+  hsl(37, 97%, 70%),
+  hsl(329, 70%, 58%)
+);
+$youtube-red: hsl(348, 97%, 39%);
+$light-greyish-blue: hsl(227, 47%, 96%);
+$lime-green: hsl(163, 72%, 41%);
+
+$desaturated-blue: hsl(228, 34%, 66%);
+
+$very-dark-blue: hsl(230, 17%, 14%);
+$very-dark-blue-2: hsl(232, 19%, 15%);
+
+$very-pale-blue: hsl(225, 100%, 98%);
+$white: hsl(0, 0%, 100%);
+$dark-desaturated-blue: hsl(228, 28%, 20%);
+
+$hover-blue-light: hsl(231, 30%, 91%);
+$hover-blue-dark: hsl(229, 24%, 27%);
+
+:root {
+  --title: #{$very-dark-blue};
+  --card-bg: #{$light-greyish-blue};
+  --top-bg: #{$very-pale-blue};
+  --h2-title: #{$dark-greyish-blue};
+  --text: #{$dark-greyish-blue};
+  --hover-color: #{$hover-blue-light};
+}
+
+$toggle-light: hsl(230, 22%, 74%);
+$toggle-dark: linear-gradient(45deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+body {
+  margin-right: 11.5%;
+  margin-left: 11.5%;
+  margin-top: 2%;
+}
+
+html[data-theme="dark"] {
+  background: $very-dark-blue;
+  --title: #{$white};
+  --card-bg: #{$dark-desaturated-blue};
+  --top-bg: #{$very-dark-blue-2};
+  --h2-title: #{$white};
+  --text: #{$desaturated-blue};
+  --hover-color: #{$hover-blue-dark};
+}
+
+.separator {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 677px) {
+  body {
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .main-card {
+    width: 80%;
+  }
+  .overview-card {
+    width: 100%;
+  }
+
+  .top-bar {
+    flex-direction: column;
+  }
+
+  .dark-mode-toggle {
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .separator {
+    visibility: visible;
+    border-width: thin;
+    height: 0.5px;
+    background-color: $desaturated-blue;
+    margin-bottom: 15px;
+  }
+}
+
+// @media only screen and (min-width: 678px) and (max-width: 1000px) {
+//   .main-card {
+//     width: calc(30vw - 75px);
+//   }
+
+//   .overview-card {
+//     width: calc(30vw - 5px);
+//   }
+// }
+
+// @media only screen and (min-width: 1001px) and (max-width: 1139px) {
+//   body {
+//     margin-right: 8%;
+//     margin-left: 8%;
+//   }
+
+//   .main-card {
+//     width: 300px;
+//   }
+
+//   .overview-card {
+//     width: 150px;
+//   }
+// }
+
+// @media only screen and (min-width: 1140px) {
+//   body {
+//     margin-right: 8%;
+//     margin-left: 8%;
+//   }
+
+//   .main-card {
+//     width: 100px;
+//   }
+
+//   .overview-card {
+//     width: 175px;
+//   }
+// }
+
+// @media only screen and (min-width: 1250px) {
+//   body {
+//     margin-right: 8%;
+//     margin-left: 8%;
+//   }
+
+//   .main-card {
+//     width: 120px;
+//   }
+
+//   .overview-card {
+//     width: 190px;
+//   }
+// }
+
+h1 {
+  color: var(--title);
+  font-family: $primary-font;
+  font-size: 18pt;
+  margin-bottom: 0%;
+  margin-top: 5px;
+}
+
+h2 {
+  color: var(--h2-title);
+  font-family: $primary-font;
+  font-size: 16pt;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  color: var(--text);
+  font-family: $primary-font;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 215px;
+  background-color: var(--top-bg);
+  z-index: -1;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  color: var(--text);
+  font-family: $primary-font;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.overview-card-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2% -10px 7%;
+}
+
+.card-line {
+  padding-top: 4px;
+  width: 300%;
+  margin-bottom: 25px;
+
+  &.facebook {
+    background-color: $facebook-blue;
+  }
+
+  &.twitter {
+    background-color: $twitter-blue;
+  }
+
+  &.instagram {
+    background-image: $instagram-gradient;
+  }
+
+  &.youtube {
+    background-color: $youtube-red;
+  }
+}
+
+.overview-card:hover {
+  transition: background-color 0.2s ease-in-out;
+  background-color: var(--hover-color);
+}
+
+.overview-card {
+  background-color: var(--card-bg);
+  cursor: pointer;
+  display: flex;
+  font-family: $primary-font;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 7px 25px 0;
+  overflow: hidden;
+  height: 110px;
+  flex: 1 1 150px;
+  margin: 0 10px 20px;
+
+  .account {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bottom-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: -10px;
+  }
+
+  .description {
+    color: var(--text);
+    font-size: 13pt;
+    font-weight: 700;
+  }
+
+  .main-number {
+    color: var(--title);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .social-icon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .growth {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .growth-text {
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 5px;
+
+    &.up {
+      color: $lime-green;
+    }
+
+    &.down {
+      color: $bright-red;
+    }
+  }
+
+  .top-info {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-card:hover {
+  transition: background-color 0.2s ease-in-out;
+  background-color: var(--hover-color);
+}
+
+.main-card {
+  background-color: var(--card-bg);
+  cursor: pointer;
+  display: flex;
+  font-family: $primary-font;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 0 14px;
+  overflow: hidden;
+  height: 180px;
+  flex: 1 1 auto;
+  margin: 0 10px 15px;
+
+  .account {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+  }
+
+  .account-name {
+    color: var(--text);
+    font-size: 10px;
+    font-weight: 700;
+    margin-left: 10%;
+  }
+
+  .description {
+    color: var(--text);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    margin-right: -2px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .main-number {
+    color: var(--title);
+    font-weight: 700;
+    font-size: 48px;
+    margin: 15px 0 0;
+    text-align: center;
+    width: 200px;
+  }
+
+  .social-icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .growth {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .growth-text {
+    font-size: 8pt;
+    font-weight: 700;
+    margin-left: 6px;
+
+    &.up {
+      color: $lime-green;
+    }
+
+    &.down {
+      color: $bright-red;
+    }
+  }
+}
+
+.main-card-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2% -10px 0;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 45px;
+  height: 22px;
+  background: $toggle-light;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  background: var(--card-bg);
+  width: 17px;
+  height: 17px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.4px;
+  left: 25px;
+  transition: ease-in-out 200ms;
+}
+
+input:checked + label {
+  background-image: $toggle-dark;
+}
+
+input:checked + label:after {
+  left: calc(100% - 25px);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: ease-in-out 420ms !important;
+  transition-delay: 0 !important;
+}
