@@ -27,9 +27,8 @@ html.transition *:after {
 
 @media only screen and (max-width: 677px) {
   body {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
+    margin-left: 8% !important;
+    margin-right: 8% !important;
   }
 
   .top-bar {
@@ -49,6 +48,11 @@ html.transition *:after {
     visibility: visible;
   }
 }
+@media only screen and (min-width: 678px) {
+  .separator {
+    visibility: hidden;
+  }
+}
 a {
   color: var(--text);
 }
@@ -56,7 +60,7 @@ a {
 body {
   margin-left: 11.5%;
   margin-right: 11.5%;
-  margin-top: 2%;
+  margin-top: 20px;
 }
 
 h1 {
@@ -333,10 +337,6 @@ label:after {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 2% -10px 20px;
-}
-
-.separator {
-  visibility: hidden;
 }
 
 .title {
