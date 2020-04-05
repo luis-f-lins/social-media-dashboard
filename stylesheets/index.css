@@ -25,6 +25,30 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
+@media only screen and (max-width: 677px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+
+  .top-bar {
+    flex-direction: column;
+  }
+
+  .dark-mode-toggle {
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .separator {
+    background-color: #8b97c6;
+    border-width: thin;
+    height: 0.5px;
+    margin-bottom: 15px;
+    visibility: visible;
+  }
+}
 a {
   color: var(--text);
 }
@@ -116,34 +140,6 @@ label:after {
   width: 100%;
 }
 
-.separator {
-  visibility: hidden;
-}
-
-@media only screen and (max-width: 677px) {
-  body {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-  }
-
-  .top-bar {
-    flex-direction: column;
-  }
-
-  .dark-mode-toggle {
-    justify-content: space-between;
-    margin-bottom: 30px;
-  }
-
-  .separator {
-    background-color: #8b97c6;
-    border-width: thin;
-    height: 0.5px;
-    margin-bottom: 15px;
-    visibility: visible;
-  }
-}
 .background {
   background-color: var(--top-bg);
   height: 215px;
@@ -337,6 +333,10 @@ label:after {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 2% -10px 20px;
+}
+
+.separator {
+  visibility: hidden;
 }
 
 .title {
