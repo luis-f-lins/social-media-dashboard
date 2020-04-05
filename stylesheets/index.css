@@ -262,7 +262,7 @@ label:after {
   cursor: pointer;
   display: flex;
   font-family: "Inter";
-  flex: 1 1 150px;
+  flex: 1 1 170px;
   flex-direction: column;
   height: 105px;
   justify-content: space-around;
